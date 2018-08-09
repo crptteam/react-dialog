@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dialog Should renders without problems 1`] = `
+<WithTheme(Dialog)
+  buttons={
+    Array [
+      Object {
+        "children": "Отменить изменения",
+        "onClick": [Function],
+      },
+      Object {
+        "children": "Сохранить изменения",
+        "onClick": [Function],
+      },
+    ]
+  }
+  content={
+    <div>
+      Вы изменили настройки учетной записи.
+      <br />
+      Вы уверены, что хотите не сохранять их?
+    </div>
+  }
+  isOpen={true}
+  title="Изменение настроек"
+>
+  <Dialog
+    buttons={
+      Array [
+        Object {
+          "children": "Отменить изменения",
+          "onClick": [Function],
+        },
+        Object {
+          "children": "Сохранить изменения",
+          "onClick": [Function],
+        },
+      ]
+    }
+    content={
+      <div>
+        Вы изменили настройки учетной записи.
+        <br />
+        Вы уверены, что хотите не сохранять их?
+      </div>
+    }
+    isOpen={true}
+    theme={
+      Object {
+        "Tooltip": Object {},
+      }
+    }
+    title="Изменение настроек"
+  >
+    <Dialog__Overlay
+      show={true}
+    >
+      <div
+        className="Dialog__Overlay-hZaxQJ btOXTY"
+      >
+        <Dialog__Wrap>
+          <div
+            className="Dialog__Wrap-hZvJaQ xGLtP"
+          >
+            <Dialog__Header>
+              <div
+                className="Dialog__Header-flZyoF iOTdGp"
+              >
+                Изменение настроек
+              </div>
+            </Dialog__Header>
+            <Dialog__Content>
+              <div
+                className="Dialog__Content-dxmOQa VTJeA"
+              >
+                <div>
+                  Вы изменили настройки учетной записи.
+                  <br />
+                  Вы уверены, что хотите не сохранять их?
+                </div>
+              </div>
+            </Dialog__Content>
+            <Dialog__ButtonsWrap>
+              <div
+                className="Dialog__ButtonsWrap-crANOr bujAJe"
+              >
+                <Dialog__Button
+                  key="0"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="Dialog__Button-liAEUe kKICwr"
+                    onClick={[Function]}
+                  >
+                    Отменить изменения
+                  </div>
+                </Dialog__Button>
+                <Dialog__Button
+                  key="1"
+                  onClick={[Function]}
+                >
+                  <div
+                    className="Dialog__Button-liAEUe kKICwr"
+                    onClick={[Function]}
+                  >
+                    Сохранить изменения
+                  </div>
+                </Dialog__Button>
+              </div>
+            </Dialog__ButtonsWrap>
+          </div>
+        </Dialog__Wrap>
+      </div>
+    </Dialog__Overlay>
+  </Dialog>
+</WithTheme(Dialog)>
+`;
