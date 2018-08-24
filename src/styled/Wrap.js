@@ -8,7 +8,7 @@ export const Wrap = styled.div`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  min-width: 482px;
-  max-width: 80%;
+  min-width: ${props => props.minWidth};
+  max-width: ${props => props.maxWidth};
   background: #fff;
 `;
