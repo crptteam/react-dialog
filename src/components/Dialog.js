@@ -64,7 +64,8 @@ class Dialog extends Component {
 Dialog.propTypes = {
   theme: PropTypes.object,
   isOpen: PropTypes.bool.isRequired,
-  maxWidth: PropTypes.number.isRequired,
+  maxWidth: PropTypes.string.isRequired,
+  minWidth: PropTypes.string.isRequired,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
   content: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
     .isRequired,
