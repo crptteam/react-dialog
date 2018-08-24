@@ -22,7 +22,12 @@ class Dialog extends Component {
   }
 
   renderButton(props, i) {
-    return <Button key={i} {...props} />;
+    const { ButtonComponent } = this.props;
+    return ButtonComponent ? (
+      <ButtonComponent key={i} {...props} />
+    ) : (
+      <Button key={i} {...props} />
+    );
   }
 
   onOverlayClick(e) {
@@ -32,11 +37,19 @@ class Dialog extends Component {
   }
 
   render() {
-    const { isOpen, title, content, buttons, ...otherProps } = this.props;
+    const {
+      isOpen,
+      title,
+      content,
+      buttons,
+      maxWidth,
+      minWidth,
+      ...otherProps
+    } = this.props;
 
     return (
       <Overlay show={isOpen} onClick={this.onOverlayClick}>
-        <Wrap ref={el => (this.wrap = el)}>
+        <Wrap ref={el => (this.wrap = el)} maxWidth={maxWidth} minWidth={minWidth}>
           {title ? <Header>{title}</Header> : null}
           <Content>{content}</Content>
           <ButtonsWrap>
@@ -51,8 +64,10 @@ class Dialog extends Component {
 Dialog.propTypes = {
   theme: PropTypes.object,
   isOpen: PropTypes.bool.isRequired,
+  maxWidth: PropTypes.number.isRequired,
   title: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-  content: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+  content: PropTypes.oneOfType([PropTypes.string, PropTypes.element])
+    .isRequired,
   buttons: PropTypes.array.isRequired,
   onOverlayClick: PropTypes.func
 };

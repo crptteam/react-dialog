@@ -52,26 +52,28 @@ exports[`Dialog Should renders without problems 1`] = `
     }
     title="Изменение настроек"
   >
-    <Dialog__Overlay
+    <Overlay
+      onClick={[Function]}
       show={true}
     >
       <div
-        className="Dialog__Overlay-hZaxQJ btOXTY"
+        className="Overlay-cLWomM bBOcnm"
+        onClick={[Function]}
       >
-        <Dialog__Wrap>
+        <Wrap>
           <div
-            className="Dialog__Wrap-hZvJaQ xGLtP"
+            className="Wrap-gIyiIM ebcgBl"
           >
-            <Dialog__Header>
+            <Header>
               <div
-                className="Dialog__Header-flZyoF iOTdGp"
+                className="Header-dJBcYZ gZLzgG"
               >
                 Изменение настроек
               </div>
-            </Dialog__Header>
-            <Dialog__Content>
+            </Header>
+            <Content>
               <div
-                className="Dialog__Content-dxmOQa VTJeA"
+                className="Content-ezcNVe kzumwZ"
               >
                 <div>
                   Вы изменили настройки учетной записи.
@@ -79,39 +81,39 @@ exports[`Dialog Should renders without problems 1`] = `
                   Вы уверены, что хотите не сохранять их?
                 </div>
               </div>
-            </Dialog__Content>
-            <Dialog__ButtonsWrap>
+            </Content>
+            <ButtonsWrap>
               <div
-                className="Dialog__ButtonsWrap-crANOr bujAJe"
+                className="ButtonsWrap-fcLPRt cnxDln"
               >
-                <Dialog__Button
+                <Button
                   key="0"
                   onClick={[Function]}
                 >
                   <div
-                    className="Dialog__Button-liAEUe kKICwr"
+                    className="Button-hYXUXp izzgeW"
                     onClick={[Function]}
                   >
                     Отменить изменения
                   </div>
-                </Dialog__Button>
-                <Dialog__Button
+                </Button>
+                <Button
                   key="1"
                   onClick={[Function]}
                 >
                   <div
-                    className="Dialog__Button-liAEUe kKICwr"
+                    className="Button-hYXUXp izzgeW"
                     onClick={[Function]}
                   >
                     Сохранить изменения
                   </div>
-                </Dialog__Button>
+                </Button>
               </div>
-            </Dialog__ButtonsWrap>
+            </ButtonsWrap>
           </div>
-        </Dialog__Wrap>
+        </Wrap>
       </div>
-    </Dialog__Overlay>
+    </Overlay>
   </Dialog>
 </WithTheme(Dialog)>
 `;
